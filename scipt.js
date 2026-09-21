@@ -36,9 +36,9 @@
 
 
 
-// using DOM  method 
-// querySelector() to search the DOM and returns the first HTML element
-// that matches each CSS class selector
+// using DOM  method domecument object  model
+// querySelector() to search the document and returns the first HTML element
+// that matches each  class 
 const squareOne = 
 document.querySelector(".one");
 const squareTwo = document.querySelector(".two");
@@ -59,41 +59,39 @@ const squareNine = document.querySelector(".nine");
 // Select the parent container that holds all of the square elements.
 const gridContainer = document.querySelector(".grid-container");
 
-// Event handler / callback function for square 1.
-// This function runs when the "click" event occurs on square 1.
+// This function runs when the "click" event occurs on square 1
 function oneClicked() {
   console.log("Square one was clicked!");
 
-  // I used classList.add() to apply the "white" CSS class to square 1.
+  // I used classList.add() to apply the "white" CSS class to square 1
 
   squareOne.classList.add("white");
 }
 
-// Event handler for square 2.
-// Adds a CSS class to change the appearance of square 2.
+// each variable has an event attached
+// Adds a CSS class to change the appearance of square 2 using a function called twoClicked
 function twoClicked() {
 
   squareTwo.classList.add("white");
 
-  // Log a message to confirm that the click event fired.
+  // Log/ renders a message to confirm that the click event fired
    console.log("Square two was clicked!");
   console.log(squareTwo)
 }
-// Event handler for square 3.
-// Updates the text displayed inside the square 3 element.
+
+// Updates the text inside the square 3 element
 function threeClicked() {
   squareThree.textContent = "three";
    console.log("Square 3 was clicked!");
 }
 
-// Event handler for square 4.
-// Updates a separate message element in the DOM.
+
+// Updates/shows a separate message element in the DOM 
 function fourClicked() {
   message.textContent = "This is the secret message for the 4th square.";
    console.log("Square 4 was clicked!");
 }
 
-// Event handler for square 5
 // Hides square 5 by applying hidden
 function fiveClicked() {
   squareFive.classList.add("hidden");
@@ -101,22 +99,23 @@ function fiveClicked() {
 }
 
 
-// / Event handler for square 6
-// Applies a CSS class that adds a border style to square 6.
+//
+// Applies a CSS class that adds a border style to square 6
 function sixClicked() {
   squareSix.classList.add("bordered");
    console.log("Square 6 was clicked!");
 }
 
-// Event handler for square 7.
-// Changes the text content of a different DOM  square 1.
+// 
+// using text content property used to update the text inside the element
 function sevenClicked() {
+
   squareOne.textContent = "Changed!";
    console.log("Square 7 was clicked!");
 }
 
  
-// Event handler for square 8.
+// 
 // Changes the styling of the entire webpage through the body element.
 function eightClicked() {
    // document.body targets the <body> element in the DOM.
@@ -124,13 +123,13 @@ function eightClicked() {
   document.body.classList.add("green");
    console.log("Square 8 was clicked!");
 }
- // document.body dom method targets the <body> element in the DOM.
-  // Adding green allows CSS to change the page background or other body styles.
+ 
+  // Hides the parent grid container/ hides all child square
 function nineClicked() {
   // adds hidden class to parent container
   gridContainer.classList.add("hidden");
 }
-//  A function that responds to an event "click" using addeventlistener
+//  I add method that responds to an event "click" using addeventlistener when the event happens js runs the function
 squareOne.addEventListener("click", oneClicked);
 squareTwo.addEventListener("click", twoClicked);
 squareThree.addEventListener("click", threeClicked);
