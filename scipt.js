@@ -42,44 +42,35 @@
 const squareOne = 
 document.querySelector(".one");
 const squareTwo = document.querySelector(".two");
-
 const squareThree = document.querySelector(".three");
-
 const squareFour = document.querySelector(".four");
 const squareFive = document.querySelector(".five");
-
 const squareSix = document.querySelector(".six");
-
 const squareSeven = document.querySelector(".seven");
-// finds the HTML element with the class of eight
 const squareEight = document.querySelector(".eight");
-// finds the HTML element with the class of nine
 const squareNine = document.querySelector(".nine");
 
 // Select the parent container that holds all of the square elements.
 const gridContainer = document.querySelector(".grid-container");
 
 // This function runs when the "click" event occurs on square 1
+// each variable has an event attached
 function oneClicked() {
   console.log("Square one was clicked!");
-
-  // classList.add() to apply the "white" CSS class to square 1
-
-  squareOne.classList.add("white");
+// classList.add() to apply the "white" CSS class to square 1
+squareOne.classList.add("white");
 }
 
-// each variable has an event attached
+
 // Adds a CSS class to change the appearance of square 2 using a function called twoClicked
 function twoClicked() {
-
-  squareTwo.classList.add("white");
-
-  // Log/ renders a message to confirm that the click event fired
+squareTwo.classList.add("white");
+// Logs/ renders a message to confirm that the click event fired
    console.log("Square two was clicked!");
   console.log(squareTwo)
 }
 
-// Updates the text inside the square 3 element
+// Updates the text inside the square 3 element method to update text
 function threeClicked() {
   squareThree.textContent = "three";
    console.log("Square 3 was clicked!");
@@ -106,7 +97,7 @@ function sixClicked() {
    console.log("Square 6 was clicked!");
 }
 
-// 
+
 // using text content property to update the text inside the element and render a message to the user
 function sevenClicked() {
 
