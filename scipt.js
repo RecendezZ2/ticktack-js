@@ -63,7 +63,7 @@ const gridContainer = document.querySelector(".grid-container");
 function oneClicked() {
   console.log("Square one was clicked!");
 
-  // I used classList.add() to apply the "white" CSS class to square 1
+  // classList.add() to apply the "white" CSS class to square 1
 
   squareOne.classList.add("white");
 }
@@ -107,7 +107,7 @@ function sixClicked() {
 }
 
 // 
-// using text content property used to update the text inside the element
+// using text content property to update the text inside the element and render a message to the user
 function sevenClicked() {
 
   squareOne.textContent = "Changed!";
@@ -129,7 +129,7 @@ function nineClicked() {
   // adds hidden class to parent container
   gridContainer.classList.add("hidden");
 }
-//  I add method that responds to an event "click" using addeventlistener when the event happens js runs the function
+//   method that responds to an event "click" using addeventlistener when the event happens the function is triggered
 squareOne.addEventListener("click", oneClicked);
 squareTwo.addEventListener("click", twoClicked);
 squareThree.addEventListener("click", threeClicked);
